@@ -8,6 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app /app
 
-RUN chmod +x /app/run.sh
-
-CMD ["/app/run.sh"]
+CMD ["python3", "grottserver.py"]
