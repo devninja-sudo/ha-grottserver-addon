@@ -1,5 +1,5 @@
 name: GrottServer
-version: "1.0.2"
+version: "1.0.4"
 slug: grottserver
 description: Local Growatt server replacement using GrottServer
 url: https://github.com/DEINUSER/ha-grottserver-addon
