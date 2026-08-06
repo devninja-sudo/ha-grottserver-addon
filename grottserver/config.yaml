@@ -1,0 +1,24 @@
+name: GrottServer
+version: "1.0.0"
+slug: grottserver
+description: Local Growatt server replacement using GrottServer
+url: https://github.com/DEINUSER/ha-grottserver-addon
+
+arch:
+  - aarch64
+  - armv7
+
+startup: services
+boot: auto
+
+ports:
+  5781/tcp: 5781
+  5782/tcp: 5782
+
+options:
+  mqtt_host: core-mosquitto
+  mqtt_port: 1883
+
+schema:
+  mqtt_host: str
+  mqtt_port: int
